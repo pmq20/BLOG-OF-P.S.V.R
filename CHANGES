@@ -1,0 +1,16 @@
+2011.7 15
+	embed syntaxhighlighter inside master.css and master.js
+	added a style for content <p> inside <head
+	added MathJax to write mathematics
+2011.7.10
+	added a few more signals to the main()
+        (void) signal(SIGINT,terminate);
+        (void) signal(SIGTERM,terminate);
+        (void) signal(SIGHUP,terminate);
+	so that it shuts down more securely
+version 8901 with some small changes
+	1.Javascript validation of user comment
+	2.Safety guard for POST-robot
+	3.Better response for bad incoming comment
+version 8901
+	project set up
