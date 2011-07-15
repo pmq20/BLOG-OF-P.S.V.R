@@ -1,9 +1,10 @@
 # OF P.S.V.R
 
 This is the source code of site [OF P.S.V.R](http://blog.ofpsvr.org)
-	* It is a blog engine written in C, as an experiment on the C-handled cache abilities for web application.
-	* For more information about the code, Please review the content provided inside the ofpsvr.sql file.
-	* You can use and modify this software freely under GNU General Public License.
+
+* It is a blog engine written in C, as an experiment on the C-handled cache abilities for web application.
+* For more information about the code, Please review the content provided inside the ofpsvr.sql file.
+* You can use and modify this software freely under GNU General Public License.
 
 
 ## INSTALL
