@@ -16,6 +16,11 @@ This is the source code of site [OF P.S.V.R](http://blog.ofpsvr.org)
 	mysql> use ofpsvr;
 	mysql> source ofpsvr.backup.sql;
 	mysql> exit;
+	$ sudo ofpsvr
+
+to see what is happening in the background,
+	
+	$ tail -f var/log/ofpsvr.log
 
 
 

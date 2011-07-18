@@ -127,7 +127,7 @@ int main (int argc, const char * argv[]) {
 		WRITELOG("mysql_init failed!\n");
 		return EXIT_FAILURE;
 	}
-	if(!mysql_real_connect(&my, OFPSVR_DB_HOST, OFPSVR_DB_USER, OFPSVR_DB_PASSWD, OFPSVR_DB_DB, 0, "/tmp/mysql.sock", 0)){
+	if(!mysql_real_connect(&my, OFPSVR_DB_HOST, OFPSVR_DB_USER, OFPSVR_DB_PASSWD, OFPSVR_DB_DB, 0, NULL, 0)){
 		WRITELOG("mysql_real_connect failed!\n");
 		if(mysql_errno(&my)){
 			WRITELOG("error %d: %s\n",mysql_errno(&my),mysql_error(&my));
