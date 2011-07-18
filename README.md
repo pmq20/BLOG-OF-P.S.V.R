@@ -9,6 +9,8 @@ This is the source code of site [OF P.S.V.R](http://blog.ofpsvr.org)
 
 ## INSTALL
 
+First you need to adjust some constants in ofpsvr.h, after which,
+
 	$ make
 	$ sudo make install
 	$ mysql -u root -p
@@ -20,7 +22,7 @@ This is the source code of site [OF P.S.V.R](http://blog.ofpsvr.org)
 
 to see what is happening in the background,
 	
-	$ tail -f var/log/ofpsvr.log
+	$ tail -f /var/log/ofpsvr.log
 
 
 
