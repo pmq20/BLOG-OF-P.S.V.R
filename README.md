@@ -24,6 +24,7 @@ You probably need to
 
 	$ sudo apt-get install libmysqlclient-dev
 	$ sudo apt-get install libmicrohttpd-dev
+	$ sudo apt-get install libssl-dev
 
 If you have any problems, feel free to send me mails to ask
 pmq2001 (at) gmail.com
