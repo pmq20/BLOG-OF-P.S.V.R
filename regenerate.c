@@ -48,7 +48,7 @@
 					   "<link href=\"/blog.xml\" type=\"application/rss+xml\" rel=\"alternate\" title=\"Blog Of P.S.V.R RSS Feed\" />"
 #define OFPSVR_HEADER2 "</head>"\
 					   "<body>"\
-					   "<div id=\"top\"><div id=\"logo\"><a href=\"/blog\"><img alt=\"Logo\" width=\"227\" height=\"53\" src=\"/resources/logo.png\" /></a></div></div>"\
+					   "<div id=\"top\"><div id=\"logo\"><a href=\"/blog\"><img alt=\"Logo\" src=\"/resources/logo.png\" /></a><a href=\"http://ofpsvr.org\"><img alt=\"Logo\" src=\"/resources/logo2.png\" /></a></div></div>"\
 					   "<table id=\"content\"><tr>"\
 					   "<!-- ======Content====== -->"\
 					   "<td id=\"main\">"
