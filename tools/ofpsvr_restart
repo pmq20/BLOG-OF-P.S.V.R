@@ -1,4 +1,4 @@
 #!/bin/bash
 killall ofpsvr 2>/dev/null
 sleep 1
-ofpsvr
+/usr/local/bin/ofpsvr
