@@ -44,7 +44,6 @@
               "   margin-bottom:10px;"\
               " }"\
               "</style>"\
-              "<script src=\"http://ofpsvr.org/mathjax-MathJax-f5cd294/MathJax.js?config=TeX-AMS_HTML-full.js\" type=\"text/javascript\"></script>"\
 					   "<link href=\"/blog.xml\" type=\"application/rss+xml\" rel=\"alternate\" title=\"Blog Of P.S.V.R RSS Feed\" />"
 #define OFPSVR_HEADER2 "</head>"\
 					   "<body>"\
@@ -370,14 +369,14 @@ struct MHD_Response *generate_blog_response_rss() {
 		if(asprintf(&page, "%s"
 					"<item>"
 					"<title>%s</title>"
-					"<link>http://ofpsvr.com/blog/%d</link>"
+					"<link>http://blog.ofpsvr.org/blog/%d</link>"
 					"<description>%s</description>"
 					"<pubDate>%s</pubDate>"
 					"</item>",
 					old,
 					articles[i]->title,
 					i,
-					articles[i]->introduction,
+					articles[i]->body,
 					articles[i]->rfc_posted_at)<0){return NULL;}
 		assert(old);free(old);
 	}
