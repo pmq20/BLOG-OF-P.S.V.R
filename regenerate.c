@@ -47,31 +47,30 @@
 					   "<link href=\"/blog.xml\" type=\"application/rss+xml\" rel=\"alternate\" title=\"Blog Of P.S.V.R RSS Feed\" />"
 #define OFPSVR_HEADER2 "</head>"\
 					   "<body>"\
-					   "<div id=\"top\"><div id=\"logo\"><a href=\"/blog\"><img alt=\"Logo\" src=\"/resources/logo.png\" /></a><a href=\"http://ofpsvr.org\"><img alt=\"Logo\" src=\"/resources/logo2.png\" /></a></div></div>"\
+             "<a href=\"https://github.com/pmq20/BLOG-OF-P.S.V.R\"><img style=\"position: absolute; top: 0; right: 0; border: 0;\" src=\"https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png\" alt=\"Fork me on GitHub\"></a>"\
+					   "<div id=\"top\"><div id=\"logo\"><a href=\"/\"><img alt=\"Logo\" src=\"/resources/logo.png\" /></a><a href=\"/\"><img alt=\"Logo\" src=\"/resources/logo2.png\" /></a></div></div>"\
 					   "<table id=\"content\"><tr>"\
 					   "<!-- ======Content====== -->"\
 					   "<td id=\"main\">"
 #define OFPSVR_FOOTER  "</td>"\
 					   "<td id=\"sidebar\"><ul>"\
-					   "<li><h2>关于我</h2><div id=\"about_me\" class=\"body\"><img alt=\"P.S.V.R\" id=\"psvr\" class=\"illustration\" src=\"http://www.gravatar.com/avatar/8002c84eb4c18170632f8fb7efb09288\" />大家好, 我叫<strong>P.S.V.R</strong>, 与<a href=\"http://insoeg.com/\" rel=\"nofollow\">Insoeg</a>幸福地生活在一起.<br><br style=\"clear:both\" /><strong>曾用名</strong>:Pan 平底锅 试管牛<br /><strong>衍生名</strong>:平底牛 试管锅 事故按钮 ...</div></li>"\
+					   "<li><h2>关于我</h2><div id=\"about_me\" class=\"body\"><img alt=\"P.S.V.R\" id=\"psvr\" class=\"illustration\" src=\"http://www.gravatar.com/avatar/8002c84eb4c18170632f8fb7efb09288\" />大家好, 我叫<strong>P.S.V.R</strong>, 与<a href=\"http://insoeg.com/\"><strong>Insoeg</strong></a>共同幸福地生活在一起.<br>[ <a href=\"http://ofpsvr.org/\">更多</a> ]<br style=\"clear:both\" /><strong>曾用名</strong>:Pan 平底锅 试管牛<br /><strong>衍生名</strong>:平底牛 试管锅 事故按钮 ...</div></li>"\
 					   "<li><h2>订阅</h2><div class=\"body\"><a href=\"/blog.xml\"><img id=\"rss\" alt=\"rss\" width=\"200\" height=\"173\" src=\"/resources/rss.png\" /></a></div></li>"\
-					   "<li><h2>我的朋友</h2><div class=\"body\"><ul><li><a href=\"http://www.zrapton.com/\" rel=\"nofollow\">ZaviOr</a></li><li><a href=\"http://www.marisai.com/\" rel=\"nofollow\">サイコ</a></li><li><a href=\"http://www.sishuixie.com/\" rel=\"nofollow\">乾坤九转</a></li><li><a href=\"http://www.wutj.info/\" rel=\"nofollow\">吴天际</a></li><li><a href=\"http://longyi.li/\" rel=\"nofollow\">李龙毅</a></li></ul></div></li>"\
+					   "<li><h2>我的朋友</h2><div class=\"body\"><ul><li><a href=\"http://www.zrapton.com/\">ZaviOr</a></li><li><a href=\"http://www.marisai.com/\">サイコ</a></li><li><a href=\"http://longyi.li/\">李龙毅</a></li><li><a href=\"http://www.sishuixie.com/\">乾坤九转</a></li><li><a href=\"http://www.wutj.info/\">吴天际</a></li></ul></div></li>"\
 					   "<li><h2>联系我</h2><div class=\"body\"><ul><li><img alt=\"address\" src=\"/resources/email.png\" /></li></ul></div></li>"\
 					   "</ul></td>"\
 					   "<!-- ======Content====== -->"\
 					   "</tr></table>"\
-					   "<div id=\"foot\"><p>本站的全部内容在<a href=\"http://www.gnu.org/licenses/gpl-3.0.txt\">GNU General Public License 3.0</a>之条款下提供<br /><a href=\"http://validator.w3.org/check?uri=referer\">验证 XHTML</a> | <a href=\"http://jigsaw.w3.org/css-validator/check/referer\">验证 CSS</a></p>"\
+					   "<div id=\"foot\"><p>Powered by <a href=\"https://github.com/pmq20/BLOG-OF-P.S.V.R\">BLOG-OF-P.S.V.R</a> v8901.<br /><a href=\"http://validator.w3.org/check?uri=referer\">验证 XHTML</a> | <a href=\"http://jigsaw.w3.org/css-validator/check/referer\">验证 CSS</a></p>"\
 					   "<div id=\"foot2\"></div></div>"\
-					    "<script type=\"text/javascript\">"\
-						"var gaJsHost = ((\"https:\" == document.location.protocol) ? \"https://ssl.\" : \"http://www.\");"\
-						"document.write(unescape(\"%%3Cscript src='\" + gaJsHost + \"google-analytics.com/ga.js' type='text/javascript'%%3E%%3C/script%%3E\"));"\
-						"</script>"\
-						"<script type=\"text/javascript\">"\
-						"try {"\
-						"var pageTracker = _gat._getTracker(\"UA-10247161-1\");"\
-						"pageTracker._trackPageview();"\
-						"} catch(err) {alert(err)}"\
-						"</script>"\
+						 "<script type=\"text/javascript\">"\
+						 "  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){"\
+						 "  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),"\
+						 "  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)"\
+						 "  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');"\
+						 "  ga('create', 'UA-45613300-2', 'ofpsvr.org');"\
+						 "  ga('send', 'pageview');"\
+						 "</script>"\
 					   "</body>"\
 					   "</html>"
 #define OFPSVR_RSS_HEADER "<?xml version=\"1.0\"?>"\
