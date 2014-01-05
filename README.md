@@ -9,7 +9,7 @@ This is the source code of site [OF P.S.V.R](http://blog.ofpsvr.org)
 
 ## INSTALL
 
-First you need to adjust some constants in ofpsvr.h, after which,
+First you need to adjust some constants in db\_config.h (see `db\_config.h.sample`), after which,
 
 	$ make
 	$ sudo make install
