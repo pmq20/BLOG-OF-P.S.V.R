@@ -61,13 +61,8 @@
 #define OFPSVR_VERSION 8901
 #define OFPSVR_PID_FILE "/var/run/ofpsvr.pid"
 #define OFPSVR_LOG_FILE "/var/log/ofpsvr.log"
-/*_______[CAUTION] Sensitive Information_______*/
-#define OFPSVR_DB_HOST "localhost"
-#define OFPSVR_DB_USER "root"
-#include "git_sensitive.h"
-#define OFPSVR_DB_PASSWD GIT_SENSITIVE_MYSQL_PASSWORD
-#define OFPSVR_DB_DB "ofpsvr"
-/*_____________________________________________*/
+
+#include "db_config.h"
 
 struct Comment {
 	char *content;
