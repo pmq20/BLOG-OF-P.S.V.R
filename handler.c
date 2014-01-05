@@ -322,7 +322,7 @@ static int iterate_new_comment (void *coninfo_cls, enum MHD_ValueKind kind, cons
 			if(mysql_real_escape_string(&mm,body_escape,con_info->body,strlen(con_info->body)) <= 0) return MHD_NO;
 			
 			char *sql;
-			if(asprintf(&sql,"INSERT INTO comments(`id` ,`article_id` ,`posted_at` ,`name` ,`email` ,`website` ,`body`) VALUES"
+			if(asprintf(&sql,"INSERT INTO ofpsvr_comments(`id` ,`article_id` ,`posted_at` ,`name` ,`email` ,`website` ,`body`) VALUES"
 												   "(NULL,   '%d'     ,   '%ld'    , '%s'  , '%s'   , '%s'     , '%s')",
 					 con_info->parsed_article_id,con_info->posted_at,name_escape,email_escape,
 					 (con_info->website)?website_escape:"",body_escape) < 0) return MHD_NO;

@@ -144,7 +144,7 @@ int main (int argc, const char * argv[]) {
 
 
 	//1.Retrieving Articles
-	if(mysql_query(&my, "SELECT * FROM articles ORDER BY id")){
+	if(mysql_query(&my, "SELECT * FROM ofpsvr_articles ORDER BY id")){
 		WRITELOG("SELECT error: %s\n",mysql_error(&my));
 		return EXIT_FAILURE;
 	}
@@ -192,7 +192,7 @@ int main (int argc, const char * argv[]) {
 
 
 	//2.Retrieving Comments
-	if(mysql_query(&my, "SELECT * FROM comments ORDER BY id")){
+	if(mysql_query(&my, "SELECT * FROM ofpsvr_comments ORDER BY id")){
 		WRITELOG("SELECT error: %s\n",mysql_error(&my));
 		return EXIT_FAILURE;
 	}
@@ -234,7 +234,7 @@ int main (int argc, const char * argv[]) {
 
 
 	//3.Retrieving Resources
-	if(mysql_query(&my, "SELECT * FROM resources ORDER BY article_id")){
+	if(mysql_query(&my, "SELECT * FROM ofpsvr_resources ORDER BY article_id")){
 		WRITELOG("SELECT error: %s\n",mysql_error(&my));
 		return EXIT_FAILURE;
 	}
@@ -374,7 +374,7 @@ int main (int argc, const char * argv[]) {
 	for (i=0; i<articles_len; ++i) {
 		printf("Dumping #%d...",i);fflush(stdout);
 		char *sql;
-		if(asprintf(&sql,"UPDATE articles SET `hit_count` = '%d' WHERE `id`=%d LIMIT 1", articles[i]->hit_count, i) < 0){
+		if(asprintf(&sql,"UPDATE ofpsvr_articles SET `hit_count` = '%d' WHERE `id`=%d LIMIT 1", articles[i]->hit_count, i) < 0){
 			WRITELOG("asprintf failed!");
 			continue;
 		}
