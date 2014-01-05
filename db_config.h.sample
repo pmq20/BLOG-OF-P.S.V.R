@@ -1,0 +1,6 @@
+/*_______[CAUTION] Sensitive Information_______*/
+#define OFPSVR_DB_HOST ""
+#define OFPSVR_DB_USER ""
+#define OFPSVR_DB_PASSWD ""
+#define OFPSVR_DB_DB ""
+/*_____________________________________________*/
