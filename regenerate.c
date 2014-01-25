@@ -57,7 +57,7 @@
 					   "<td id=\"sidebar\"><ul>"\
 					   "<li><h2>关于我</h2><div id=\"about_me\" class=\"body\"><img alt=\"P.S.V.R\" id=\"psvr\" class=\"illustration\" src=\"http://www.gravatar.com/avatar/8002c84eb4c18170632f8fb7efb09288\" />大家好, 我叫<strong>P.S.V.R</strong>, 与<a href=\"http://insoeg.com/\"><strong>Insoeg</strong></a>单纯幸福地生活在一起:)<br>[ <a href=\"http://ofpsvr.org/\">返回首页</a> ]<br style=\"clear:both\" /><strong>曾用名</strong>:Pan 平底锅 试管牛<br /><strong>衍生名</strong>:平底牛 试管锅 事故按钮 ...</div></li>"\
 					   "<li><h2>订阅</h2><div class=\"body\"><a href=\"/blog.xml\"><img id=\"rss\" alt=\"rss\" width=\"200\" height=\"173\" src=\"/resources/rss.png\" /></a></div></li>"\
-					   "<li><h2>我的朋友</h2><div class=\"body\"><ul><li><a href=\"http://www.zrapton.com/\">ZaviOr</a></li><li><a href=\"http://www.marisai.com/\">サイコ</a></li><li><a href=\"http://longyi.li/\">李龙毅</a></li><li><a href=\"http://www.sishuixie.com/\">乾坤九转</a></li><li><a href=\"http://www.wutj.info/\">吴天际</a></li></ul></div></li>"\
+					   "<li><h2>我的朋友</h2><div class=\"body\"><ul><li><a href=\"http://www.zrapton.com/\">ZaviOr</a></li><li><a href=\"http://www.marisai.com/\">サイコ</a></li><li><a href=\"http://longyi.li/\">李龙毅</a></li><li><a href=\"http://www.sishuixie.com/\">乾坤九转</a></li><li><a href=\"http://www.wutj.info/\">吴天际</a></li><li><a href=\"http://pine.im/\">Pine</a></li></ul></div></li>"\
 					   "<li><h2>联系我</h2><div class=\"body\"><ul><li><img alt=\"address\" src=\"/resources/email.png\" /></li></ul></div></li>"\
 					   "</ul></td>"\
 					   "<!-- ======Content====== -->"\
