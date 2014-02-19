@@ -62,7 +62,7 @@
 					   "</ul></td>"\
 					   "<!-- ======Content====== -->"\
 					   "</tr></table>"\
-					   "<div id=\"foot\"><p>Powered by <a href=\"https://github.com/pmq20/BLOG-OF-P.S.V.R\">BLOG-OF-P.S.V.R</a> v8901.<br /><a href=\"http://validator.w3.org/check?uri=referer\">Validate XHTML</a> | <a href=\"http://jigsaw.w3.org/css-validator/check/referer\">Validate CSS</a></p>"\
+					   "<div id=\"foot\"><p>Powered by <a href=\"https://github.com/pmq20/BLOG-OF-P.S.V.R\">BLOG-OF-P.S.V.R</a> v8901.<br /><a href=\"http://ofpsvr.org\">Home</a> | <a href=\"http://validator.w3.org/check?uri=referer\">Validate XHTML</a> | <a href=\"http://jigsaw.w3.org/css-validator/check/referer\">Validate CSS</a></p>"\
 					   "<div id=\"foot2\"></div></div>"\
 						 "<script type=\"text/javascript\">"\
 						 "  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){"\
@@ -246,9 +246,9 @@ int regenerate(struct Article *x,int id) {
 				 "</div>"
 				 "<form id=\"comments_add\" method=\"post\" onsubmit=\"return test_submit()\">"
 					 "<p><input type=\"text\" tabindex=\"1\" size=\"22\" value=\"\" id=\"author\" name=\"reply[name]\"/>"
-					 "<label for=\"author\">*Nick Name</label>"
+					 "<label for=\"author\">*Name</label>"
 					 "<p><input type=\"text\" tabindex=\"2\" size=\"22\" value=\"\" id=\"email\" name=\"reply[email]\"/>"
-					 "<label for=\"email\">*E-mail (For the use of <a href=\"http://gravatar.com\">Gravatar</a>, will not be disclosed)</label></p>"
+					 "<label for=\"email\">*E-mail (will not be disclosed)</label></p>"
 					 "<p><input type=\"text\" tabindex=\"3\" size=\"22\" value=\"\" id=\"url\" name=\"reply[website]\"/>"
 					 "<label for=\"url\">Website (optional)</label></p>"
 					 "<p><textarea tabindex=\"4\" rows=\"5\" cols=\"100\" id=\"comment\" name=\"reply[body]\"></textarea></p>"
