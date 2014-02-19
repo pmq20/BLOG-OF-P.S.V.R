@@ -55,14 +55,14 @@
 					   "<td id=\"main\">"
 #define OFPSVR_FOOTER  "</td>"\
 					   "<td id=\"sidebar\"><ul>"\
-					   "<li><h2>关于我</h2><div id=\"about_me\" class=\"body\"><img alt=\"P.S.V.R\" id=\"psvr\" class=\"illustration\" src=\"http://www.gravatar.com/avatar/8002c84eb4c18170632f8fb7efb09288\" />大家好, 我叫<strong>P.S.V.R</strong>, 与<a href=\"http://insoeg.com/\"><strong>Insoeg</strong></a>单纯幸福地生活在一起:)<br>[ <a href=\"http://ofpsvr.org/\">返回首页</a> ]<br style=\"clear:both\" /><strong>曾用名</strong>:Pan 平底锅 试管牛<br /><strong>衍生名</strong>:平底牛 试管锅 事故按钮 ...</div></li>"\
-					   "<li><h2>订阅</h2><div class=\"body\"><a href=\"/blog.xml\"><img id=\"rss\" alt=\"rss\" width=\"200\" height=\"173\" src=\"/resources/rss.png\" /></a></div></li>"\
-					   "<li><h2>我的朋友</h2><div class=\"body\"><ul><li><a href=\"http://www.zrapton.com/\">ZaviOr</a></li><li><a href=\"http://www.marisai.com/\">サイコ</a></li><li><a href=\"http://longyi.li/\">李龙毅</a></li><li><a href=\"http://www.sishuixie.com/\">乾坤九转</a></li><li><a href=\"http://www.wutj.info/\">吴天际</a></li><li><a href=\"http://pine.im/\">Pine</a></li></ul></div></li>"\
-					   "<li><h2>联系我</h2><div class=\"body\"><ul><li><img alt=\"address\" src=\"/resources/email.png\" /></li></ul></div></li>"\
+					   "<li><h2>About</h2><div id=\"about_me\" class=\"body\"><img alt=\"P.S.V.R\" id=\"psvr\" class=\"illustration\" src=\"http://www.gravatar.com/avatar/8002c84eb4c18170632f8fb7efb09288\" />Hello, I'm <strong>P.S.V.R</strong>, Living in happiness with <a href=\"http://insoeg.com/\"><strong>Insoeg</strong></a>.<br>[ <a href=\"http://ofpsvr.org/\">Home</a> ]<br style=\"clear:both\" /><strong>A.K.A.'s</strong>:Pan 平底锅 试管牛<br /><strong>Derivatives</strong>:平底牛 试管锅 事故按钮 ...</div></li>"\
+					   "<li><h2>Subscription</h2><div class=\"body\"><a href=\"/blog.xml\"><img id=\"rss\" alt=\"rss\" width=\"200\" height=\"173\" src=\"/resources/rss.png\" /></a></div></li>"\
+					   "<li><h2>Friends</h2><div class=\"body\"><ul><li><a href=\"http://www.zrapton.com/\">ZaviOr</a></li><li><a href=\"http://www.marisai.com/\">サイコ</a></li><li><a href=\"http://longyi.li/\">Longyi Lee</a></li><li><a href=\"http://www.sishuixie.com/\">Qiankjz</a></li><li><a href=\"http://www.wutj.info/\">Tianji Wu</a></li><li><a href=\"http://pine.im/\">Pine</a></li></ul></div></li>"\
+					   "<li><h2>Contact</h2><div class=\"body\"><ul><li><img alt=\"address\" src=\"/resources/email.png\" /></li></ul></div></li>"\
 					   "</ul></td>"\
 					   "<!-- ======Content====== -->"\
 					   "</tr></table>"\
-					   "<div id=\"foot\"><p>Powered by <a href=\"https://github.com/pmq20/BLOG-OF-P.S.V.R\">BLOG-OF-P.S.V.R</a> v8901.<br /><a href=\"http://validator.w3.org/check?uri=referer\">验证 XHTML</a> | <a href=\"http://jigsaw.w3.org/css-validator/check/referer\">验证 CSS</a></p>"\
+					   "<div id=\"foot\"><p>Powered by <a href=\"https://github.com/pmq20/BLOG-OF-P.S.V.R\">BLOG-OF-P.S.V.R</a> v8901.<br /><a href=\"http://validator.w3.org/check?uri=referer\">Validate XHTML</a> | <a href=\"http://jigsaw.w3.org/css-validator/check/referer\">Validate CSS</a></p>"\
 					   "<div id=\"foot2\"></div></div>"\
 						 "<script type=\"text/javascript\">"\
 						 "  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){"\
@@ -195,15 +195,15 @@ int regenerate(struct Article *x,int id) {
 					"</td>"
 				"</tr></table>"
 				"<div class=\"intro\" style=\"margin-top:50px\">"
-				"<p><span class=\"bracket\">{</span> <span>%d</span> 个资源 <span class=\"bracket\">}</span></p>"
+				"<p><span class=\"bracket\">{</span> <span>%d</span> Resources <span class=\"bracket\">}</span></p>"
 				"</div>"
 				"<div id=\"resources_list_wrapper\">"
 				"<table id=\"resources_list\">"
 				"<thead>"
 				"<tr>"
-				"<td width=\"25%%\">编号</td>"
-				"<td width=\"50%%\">文件名</td>"
-				"<td width=\"35%%\">大小</td>"
+				"<td width=\"25%%\">#</td>"
+				"<td width=\"50%%\">File Name</td>"
+				"<td width=\"35%%\">Size</td>"
 				"</tr>"
 				"</thead>"
 				"<tbody>",
@@ -228,7 +228,7 @@ int regenerate(struct Article *x,int id) {
 				"</table>"
 				"</div>"
 				"<div class=\"intro\" style=\"margin-top:50px\">"
-				"<p><span class=\"bracket\">{</span> <span>%d</span> 条评论... 继续阅读 or <a rel=\"nofollow\" href=\"#comments_add\">添加一条</a> <span class=\"bracket\">}</span></p>"
+				"<p><span class=\"bracket\">{</span> <span>%d</span> Comments... Continue reading or <a rel=\"nofollow\" href=\"#comments_add\">Add a Comment</a> <span class=\"bracket\">}</span></p>"
 				"</div>",
 				old,
 				x->comment_count) < 0){return 0;}
@@ -242,17 +242,17 @@ int regenerate(struct Article *x,int id) {
 	old = page;
 	if(asprintf(&page,"%s"
 				 "<div class=\"intro\">"
-					"<p>您也随便说两句吧</p>"
+					"<p>Add a comment</p>"
 				 "</div>"
 				 "<form id=\"comments_add\" method=\"post\" onsubmit=\"return test_submit()\">"
 					 "<p><input type=\"text\" tabindex=\"1\" size=\"22\" value=\"\" id=\"author\" name=\"reply[name]\"/>"
-					 "<label for=\"author\">*昵称</label>"
+					 "<label for=\"author\">*Nick Name</label>"
 					 "<p><input type=\"text\" tabindex=\"2\" size=\"22\" value=\"\" id=\"email\" name=\"reply[email]\"/>"
-					 "<label for=\"email\">*E-mail（用于<a href=\"http://gravatar.com\">Gravatar</a>,不会公开）</label></p>"
+					 "<label for=\"email\">*E-mail (For the use of <a href=\"http://gravatar.com\">Gravatar</a>, will not be disclosed)</label></p>"
 					 "<p><input type=\"text\" tabindex=\"3\" size=\"22\" value=\"\" id=\"url\" name=\"reply[website]\"/>"
-					 "<label for=\"url\">您的网站（可选）</label></p>"
+					 "<label for=\"url\">Website (optional)</label></p>"
 					 "<p><textarea tabindex=\"4\" rows=\"5\" cols=\"100\" id=\"comment\" name=\"reply[body]\"></textarea></p>"
-					 "<p><input type=\"submit\" value=\"提交评论\" tabindex=\"5\" id=\"submit\" name=\"commit\"/></p>"
+					 "<p><input type=\"submit\" value=\"Submit\" tabindex=\"5\" id=\"submit\" name=\"commit\"/></p>"
 				 "</form>"
 				OFPSVR_FOOTER,
 			    old) < 0){return 0;}
@@ -312,9 +312,9 @@ struct MHD_Response *generate_blog_response() {
 		if(asprintf(&page, "%s"
 				 "<table class=\"post\"><tr>"
 				 "<td class=\"post_boxes\">"
-				 "<div class=\"box b_hits\"><div class=\"number\">%s</div><div>点击</div></div>"
-				 "<div class=\"box b_replies\" style=\"background-color:%s\"><div class=\"number\">%s</div><div>评论</div></div>"
-				 "<div class=\"box b_resources\"><div class=\"number\">%s</div><div>资源</div></div>"
+				 "<div class=\"box b_hits\"><div class=\"number\">%s</div><div>Hits</div></div>"
+				 "<div class=\"box b_replies\" style=\"background-color:%s\"><div class=\"number\">%s</div><div>Comments</div></div>"
+				 "<div class=\"box b_resources\"><div class=\"number\">%s</div><div>Resources</div></div>"
 				 "</td>"
 				 "<td class=\"post_header\">"
 				 "<h2 class=\"title\"><a href=\"/blog/%d\">%s</a></h2>"
