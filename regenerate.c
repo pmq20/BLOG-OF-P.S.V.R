@@ -195,7 +195,7 @@ int regenerate(struct Article *x,int id) {
 					"</td>"
 				"</tr></table>"
 				"<div class=\"intro\" style=\"margin-top:50px\">"
-				"<p><span class=\"bracket\">{</span> <span>%d</span> Resources <span class=\"bracket\">}</span></p>"
+				"<p><span class=\"bracket\">{</span> <span>%d</span> files <span class=\"bracket\">}</span></p>"
 				"</div>"
 				"<div id=\"resources_list_wrapper\">"
 				"<table id=\"resources_list\">"
@@ -228,7 +228,7 @@ int regenerate(struct Article *x,int id) {
 				"</table>"
 				"</div>"
 				"<div class=\"intro\" style=\"margin-top:50px\">"
-				"<p><span class=\"bracket\">{</span> <span>%d</span> Comments... Continue reading or <a rel=\"nofollow\" href=\"#comments_add\">Add a Comment</a> <span class=\"bracket\">}</span></p>"
+				"<p><span class=\"bracket\">{</span> <span>%d</span> notes... Continue reading or <a rel=\"nofollow\" href=\"#comments_add\">Add a note</a> <span class=\"bracket\">}</span></p>"
 				"</div>",
 				old,
 				x->comment_count) < 0){return 0;}
@@ -242,7 +242,7 @@ int regenerate(struct Article *x,int id) {
 	old = page;
 	if(asprintf(&page,"%s"
 				 "<div class=\"intro\">"
-					"<p>Add a comment</p>"
+					"<p>Add a note</p>"
 				 "</div>"
 				 "<form id=\"comments_add\" method=\"post\" onsubmit=\"return test_submit()\">"
 					 "<p><input type=\"text\" tabindex=\"1\" size=\"22\" value=\"\" id=\"author\" name=\"reply[name]\"/>"
@@ -312,9 +312,9 @@ struct MHD_Response *generate_blog_response() {
 		if(asprintf(&page, "%s"
 				 "<table class=\"post\"><tr>"
 				 "<td class=\"post_boxes\">"
-				 "<div class=\"box b_hits\"><div class=\"number\">%s</div><div>Hits</div></div>"
-				 "<div class=\"box b_replies\" style=\"background-color:%s\"><div class=\"number\">%s</div><div>Comments</div></div>"
-				 "<div class=\"box b_resources\"><div class=\"number\">%s</div><div>Resources</div></div>"
+				 "<div class=\"box b_hits\"><div class=\"number\">%s</div><div>hits</div></div>"
+				 "<div class=\"box b_replies\" style=\"background-color:%s\"><div class=\"number\">%s</div><div>notes</div></div>"
+				 "<div class=\"box b_resources\"><div class=\"number\">%s</div><div>files</div></div>"
 				 "</td>"
 				 "<td class=\"post_header\">"
 				 "<h2 class=\"title\"><a href=\"/blog/%d\">%s</a></h2>"
