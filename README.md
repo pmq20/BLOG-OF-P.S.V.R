@@ -35,3 +35,14 @@ You probably need to
 
 If you have any problems, feel free to send me mails to ask
 pmq2001 (at) gmail.com
+
+## Signals OF P.S.V.R (todo)
+
+Process ofpsvr responds to these signals:
+
+- `TTIN` increment the worker count by 1
+- `TTOU` decrement the worker count by 1
+- `TERM` send `TERM` to worker. Worker will attempt to finish then exit.
+- `USR2` restart workers and thus re-generate all cache
+- `USR1` restart workers and thus re-generate all cache in phases, a rolling restart.
+- `INT` equivalent of sending Ctrl-C. Will attempt to finish then exit.
