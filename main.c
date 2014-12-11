@@ -122,6 +122,14 @@ int main (int argc, const char * argv[]) {
 	cache_size_silent = 1;
 
 	//0.Connecting DB
+  mrb_state *mrb = mrb_open();
+  if (!mrb) {
+		WRITELOG("mrb_open() failed!\n");
+		return EXIT_FAILURE;
+  }
+  mrb_load_string(mrb, "puts 'こんにちは、世界 :-)'");
+  mrb_load_string(mrb, "puts \"いまは#{Time.now}です。\"");
+
 	printf("Connecting DB...");fflush(stdout);
 	if(!mysql_init(&my)){
 		WRITELOG("mysql_init failed!\n");
@@ -393,6 +401,9 @@ int main (int argc, const char * argv[]) {
 		}
 	}
 	mysql_close(&my);
+
+  mrb_load_string(mrb, "puts \"こんばんは！\"");
+  mrb_close(mrb);
 	WRITELOG("Bye.\n");
 	return EXIT_SUCCESS;
 }

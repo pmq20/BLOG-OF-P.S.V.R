@@ -2,9 +2,9 @@ objects = regenerate.o handler.o
 
 all:ofpsvr
 ofpsvr:main.c $(objects)
-	cc main.c $(objects) -o $@ -L/usr/local/lib -lmysqlclient -lcrypto -lmicrohttpd -lpthread -O3
+	cc main.c $(objects) -o $@ -I../mruby/include -L/usr/local/lib ../mruby/build/host/lib/libmruby.a -lm -lmysqlclient -lcrypto -lmicrohttpd -lpthread -O3
 $(objects): %.o: %.c
-	cc $< -o $@ -c -L/usr/local/lib -lmysqlclient -lcrypto -lmicrohttpd -lpthread -O3
+	cc $< -o $@ -c -I../mruby/include -L/usr/local/lib ../mruby/build/host/lib/libmruby.a -lm -lmysqlclient -lcrypto -lmicrohttpd -lpthread -O3
 install:ofpsvr
 	cp ./ofpsvr /usr/local/bin
 clean:

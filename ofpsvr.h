@@ -56,6 +56,9 @@
 #include <assert.h>
 #include <setjmp.h> 
 
+#include <stdio.h>
+#include <mruby.h>
+#include <mruby/compile.h>
 
 #define POSTBUFFERSIZE  512
 #define OFPSVR_VERSION 8901
