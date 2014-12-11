@@ -2,3 +2,4 @@
 *.o
 ofpsvr
 db_config.h
+*.out
