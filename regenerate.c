@@ -57,7 +57,7 @@
 					   "<td id=\"sidebar\"><ul>"\
 					   "<li><h2>About</h2><div id=\"about_me\" class=\"body\"><img alt=\"P.S.V.R\" id=\"psvr\" class=\"illustration\" src=\"http://www.gravatar.com/avatar/8002c84eb4c18170632f8fb7efb09288\" />Hello, I'm <strong>P.S.V.R</strong>, Living in happiness with <a href=\"http://insoeg.com/\"><strong>Insoeg</strong></a>.<br>[ <a href=\"http://ofpsvr.org/\">Home</a> ]<br style=\"clear:both\" /><strong>A.K.A.'s</strong>:Pan 平底锅 试管牛<br /><strong>Derivatives</strong>:平底牛 试管锅 事故按钮 ...</div></li>"\
 					   "<li><h2>Subscribe</h2><div class=\"body\"><a href=\"/blog.xml\"><img id=\"rss\" alt=\"rss\" width=\"200\" height=\"173\" src=\"/resources/rss.png\" /></a></div></li>"\
-					   "<li><h2>Friends</h2><div class=\"body\"><ul><li><a href=\"http://www.zrapton.com/\">ZaviOr</a></li><li><a href=\"http://www.marisai.com/\">サイコ</a></li><li><a href=\"http://longyi.li/\">Longyi Lee</a></li><li><a href=\"http://www.sishuixie.com/\">Qiankjz</a></li><li><a href=\"http://www.wutj.info/\">Tianji Wu</a></li><li><a href=\"http://pine.im/\">Pine</a></li></ul></div></li>"\
+					   "<li><h2>Friends</h2><div class=\"body\"><ul><li><a href=\"http://longyi.li/\">Longyi</a>, since 2013</li><li>张家雨, since 2009</li><li><a href=\"http://www.zrapton.com/\">ZaviOr</a>, since 2007</li><li><a href=\"http://www.marisai.com/\">サイコ</a>, since 2006</li><li><a href=\"http://sazz.info/\">Sounder</a>, since 2004</li><li><a href=\"http://www.sishuixie.com/\">Qiankjz</a>, since 2003</li><li><a href=\"http://github.com/llb0536\">Liber</a>, since 2002</li><li><a href=\"http://weibo.com/lxj1234\">Linz</a>, since 2002</li></ul></div></li>"\
 					   "<li><h2>Contact</h2><div class=\"body\"><ul><li><img alt=\"address\" src=\"/resources/email.png\" /></li></ul></div></li>"\
 					   "</ul></td>"\
 					   "<!-- ======Content====== -->"\
@@ -248,7 +248,7 @@ int regenerate(struct Article *x,int id) {
 					 "<p><input type=\"text\" tabindex=\"1\" size=\"22\" value=\"\" id=\"author\" name=\"reply[name]\"/>"
 					 "<label for=\"author\">*Name</label>"
 					 "<p><input type=\"text\" tabindex=\"2\" size=\"22\" value=\"\" id=\"email\" name=\"reply[email]\"/>"
-					 "<label for=\"email\">*E-mail (will not be disclosed)</label></p>"
+					 "<label for=\"email\">*E-mail (will not be shown)</label></p>"
 					 "<p><input type=\"text\" tabindex=\"3\" size=\"22\" value=\"\" id=\"url\" name=\"reply[website]\"/>"
 					 "<label for=\"url\">Website (optional)</label></p>"
 					 "<p><textarea tabindex=\"4\" rows=\"5\" cols=\"100\" id=\"comment\" name=\"reply[body]\"></textarea></p>"
